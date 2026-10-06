@@ -34,6 +34,5 @@ clean:
 
 ci: clean check test
 count: build ## report source files and built words
-@ls -1 $(SRC_DIR)/*.txt | wc -l
-@wc -w $(OUTPUTS) | tail -1
-
+	@ls -1 $(SRC_DIR)/*.txt | wc -l
+	@wc -w $(OUTPUTS) | tail -1
